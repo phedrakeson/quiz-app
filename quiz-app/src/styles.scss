@@ -20,3 +20,9 @@ img {
   max-width: 100%;
   display: block;
 }
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 40%;
+  }
+}

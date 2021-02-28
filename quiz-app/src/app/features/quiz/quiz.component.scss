@@ -72,10 +72,17 @@ span {
   max-width: 600px;
   align-self: center;
   margin: 20px 0 40px 0;
+  @media only screen and (max-width: 450px) {
+    margin: 10px 0 20px 0;
+    max-width: 100%;
+  }
 }
 
 .quiz-selection {
   align-self: center;
+  @media only screen and (max-width: 450px) {
+    width: 100%;
+  }
 }
 
 .quiz-option {
@@ -87,10 +94,17 @@ span {
   font-size: 2.6rem;
   font-weight: 600;
   color: #e4e9ed;
+  @media only screen and (max-width: 450px) {
+    width: 100%;
+  }
 }
 
 li + li {
   margin: 20px 0 20px 0;
+
+  @media only screen and (max-width: 450px) {
+    margin: 10px 0 10px 0;
+  }
 }
 
 .quiz-option:hover {
