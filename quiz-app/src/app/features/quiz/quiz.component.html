@@ -1,35 +1,21 @@
 <div class="container">
   <div class="quiz-container">
     <div class="quiz-timer">
-      <span>60</span>
+      <span appTimer></span>
     </div>
     <div class="quiz-header">
       <h1>Pergunta</h1>
       <div class="quiz-page">
-        <p>5</p><span>/ 10</span>
+        <p>{{questionIndex + 1}}</p><span>/ {{ questions.length }}</span>
       </div>
     </div>
 
-    <h2>Método de array para modificar cada item e retornar uma array nova</h2>
+    <h2>{{questions[questionIndex].question}}</h2>
 
     <ul class="quiz-selection">
-      <li>
-        <button class="quiz-option">forEach</button>
-      </li>
-
-      <li>
-        <button class="quiz-option">forEach</button>
-      </li>
-
-      <li>
-        <button class="quiz-option">forEach</button>
-      </li>
-
-      <li>
-        <button class="quiz-option">forEach</button>
+      <li  *ngFor="let answer of answers">
+        <button class="quiz-option" (click)="verifyAnswer($event)">{{answer.text}}</button>
       </li>
     </ul>
-
-    <button class="quiz-next">Próxima</button>
   </div>
 </div>
