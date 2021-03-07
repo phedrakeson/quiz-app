@@ -6,9 +6,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 p {
   font-size: 5rem;
   color: white;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
 }
