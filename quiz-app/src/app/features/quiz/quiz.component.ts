@@ -45,6 +45,7 @@ export class QuizComponent implements OnInit {
         verticalPosition: 'top',
         duration: 1000,
       });
+      this.quizService.score++;
       this.nextQuestion();
     }
     else {

@@ -11,6 +11,9 @@ export interface IQuestion {
 })
 
 export class QuizService {
+
+  public score: number = 0;
+
   constructor() { }
   public questionIndex: number = 0;
   public questions: IQuestion[] = [
