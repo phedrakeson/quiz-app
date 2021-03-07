@@ -46,7 +46,7 @@ export class QuizComponent implements OnInit {
         duration: 1000,
       });
       this.quizService.score++;
-      this.nextQuestion();
+      setTimeout( () => this.nextQuestion() , 1000)
     }
     else {
       this.snackBar.open('Resposta errada!', undefined, {
