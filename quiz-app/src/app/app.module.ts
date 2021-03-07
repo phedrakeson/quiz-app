@@ -8,14 +8,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
 import { QuizComponent } from './features/quiz/quiz.component';
-import { TimerDirective } from './shared/directives/timer.directive';
+import { QuizFinalComponent } from './features/quiz-final/quiz-final.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     QuizComponent,
-    TimerDirective
+    QuizFinalComponent
   ],
   imports: [
     BrowserModule,

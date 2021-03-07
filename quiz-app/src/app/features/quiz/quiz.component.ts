@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import { IQuestion, QuizService } from './quiz.service';
 
 @Component({
@@ -11,19 +12,29 @@ export class QuizComponent implements OnInit {
 
   public questionIndex: number = 0;
   public questions: IQuestion[] = [];
+  public timer: number = 60;
+
 
   public answers: any;
 
-  constructor(private snackBar: MatSnackBar, private quizService: QuizService) { }
+  constructor(private snackBar: MatSnackBar, private quizService: QuizService, private router: Router) { }
   
   ngOnInit(): void {
+    this.questions = this.quizService.getQuestions();
+    this.questionTimer();
     this.renderCurrentQuestion();
   }
 
   renderCurrentQuestion() {
-    this.questions = this.quizService.getQuestions();
-    this.answers = this.questions[this.questionIndex].answers;
-    console.log({questions: this.questions });
+    if(this.questionIndex >= 10) {
+      this.endQuiz()
+    } else {
+      this.timer = 60;
+      this.answers = this.questions[this.questionIndex].answers;
+      console.log({questions: this.questions });
+    }
+
+
   }
 
   verifyAnswer(event: any) {
@@ -49,7 +60,21 @@ export class QuizComponent implements OnInit {
 
   nextQuestion() {
     this.questionIndex += 1;
-    this.renderCurrentQuestion();
-    console.log(this.questionIndex);
+    this.renderCurrentQuestion(); 
+  }
+
+  endQuiz() {
+    console.log('O quiz acabou, indo para próxima tela')
+    this.router.navigate(['quiz/result'])
+  }
+
+  questionTimer() {
+    setInterval(() => {
+      if(this.timer <= 0) {
+        this.nextQuestion();
+      } else {
+        this.timer--
+      }
+    }, 1000)
   }
 }

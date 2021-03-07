@@ -44,6 +44,76 @@ export class QuizService {
       ],
       answer: '4'
     },
+    {
+      question: 'outra pergunta',
+      answers: [
+        { text: '1'},
+        { text: '2'},
+        { text: '3'},
+        { text: '4'}
+      ],
+      answer: '4'
+    },
+    {
+      question: 'outra pergunta',
+      answers: [
+        { text: '1'},
+        { text: '2'},
+        { text: '3'},
+        { text: '4'}
+      ],
+      answer: '4'
+    },
+    {
+      question: 'outra pergunta',
+      answers: [
+        { text: '1'},
+        { text: '2'},
+        { text: '3'},
+        { text: '4'}
+      ],
+      answer: '4'
+    },
+    {
+      question: 'outra pergunta',
+      answers: [
+        { text: '1'},
+        { text: '2'},
+        { text: '3'},
+        { text: '4'}
+      ],
+      answer: '4'
+    },
+    {
+      question: 'outra pergunta',
+      answers: [
+        { text: '1'},
+        { text: '2'},
+        { text: '3'},
+        { text: '4'}
+      ],
+      answer: '4'
+    },
+    {
+      question: 'outra pergunta',
+      answers: [
+        { text: '1'},
+        { text: '2'},
+        { text: '3'},
+        { text: '4'}
+      ],
+      answer: '4'
+    },
+    {
+      question: 'outra pergunta',
+      answers: [
+        { text: '1'},
+        { text: '2'},
+        { text: '3'},
+        { text: '4'}
+      ],
+      answer: '4'
+    },
   ];
 
   getQuestions() {
