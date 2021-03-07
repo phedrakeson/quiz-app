@@ -21,6 +21,18 @@ img {
   display: block;
 }
 
+.correct {
+  background-color: #03a678;
+  padding: 10px;
+  color: white;
+}
+
+.incorrect {
+  background-color: #96281b;
+  padding: 10px;
+  color: white;
+}
+
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 40%;

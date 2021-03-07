@@ -48,3 +48,11 @@
   opacity: 75%;
   cursor: pointer;
 }
+
+.card-lang.disabled:hover {
+  cursor: not-allowed;
+}
+
+.card-lang.disabled {
+  opacity: 50%;
+}
