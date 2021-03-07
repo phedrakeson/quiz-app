@@ -31,7 +31,6 @@ export class QuizComponent implements OnInit {
     } else {
       this.timer = 60;
       this.answers = this.questions[this.questionIndex].answers;
-      console.log({questions: this.questions });
     }
 
 
