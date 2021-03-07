@@ -38,84 +38,84 @@ export class QuizService {
       answer: 'filter'
     },
     {
-      question: 'outra pergunta',
+      question: 'O que === tem de diferente de ==?',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: 'Nada'},
+        { text: 'Verifica valor e tipo'},
+        { text: 'Verifica somente o tipo'},
+        { text: 'Atribui um valor'}
       ],
-      answer: '4'
+      answer: 'Verifica valor e tipo'
     },
     {
-      question: 'outra pergunta',
+      question: 'O que “1” + 2 + 4 retorna?',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: '7'},
+        { text: '"7"'},
+        { text: '124'},
+        { text: '"124"'}
       ],
-      answer: '4'
+      answer: '"124"'
     },
     {
-      question: 'outra pergunta',
+      question: 'Qual a diferença entre undefined e null?',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: 'Undefined significa que o valor ainda não foi definido, já null é um bug'},
+        { text: 'Undefined significa que o valor ainda não foi definido, já null é um erro'},
+        { text: 'Null significa que o valor ainda não foi definido, já undefined é um erro'},
+        { text: 'Nenhuma'}
       ],
-      answer: '4'
+      answer: 'Undefined significa que o valor ainda não foi definido, já null é um erro'
     },
     {
-      question: 'outra pergunta',
+      question: 'Java === Javascript?',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: 'Sim'},
+        { text: 'Não'},
+        { text: 'Não sei'},
+        { text: 'Python?'}
       ],
-      answer: '4'
+      answer: 'Não'
     },
     {
-      question: 'outra pergunta',
+      question: 'Método para retornar um número como string',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: 'Number'},
+        { text: 'transform'},
+        { text: 'numberToString'},
+        { text: 'toString'}
       ],
-      answer: '4'
+      answer: 'toString'
     },
     {
-      question: 'outra pergunta',
+      question: 'O que o método .click() faz?',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: 'Nada'},
+        { text: 'Simula um clique no objeto'},
+        { text: 'Simula um clique na página'},
+        { text: 'Simula um clique no browser'}
       ],
-      answer: '4'
+      answer: 'Simula um clique no objeto'
     },
     {
-      question: 'outra pergunta',
+      question: 'Método para limitar o número de casas decimais',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: 'toFixed'},
+        { text: 'toDecimals'},
+        { text: 'toPrecision'},
+        { text: 'maxDecimals'}
       ],
-      answer: '4'
+      answer: 'toFixed'
     },
     {
-      question: 'outra pergunta',
+      question: 'Diferença entre For In e For Of loops',
       answers: [
-        { text: '1'},
-        { text: '2'},
-        { text: '3'},
-        { text: '4'}
+        { text: 'For In retorna as chaves enquanto For Of retorna o conteúdo em si'},
+        { text: 'For Of retorna as chaves enquanto For In retorna o conteúdo em si'},
+        { text: 'For Of funciona apenas com objetos'},
+        { text: 'For In funciona apenas com iteráveis'}
       ],
-      answer: '4'
+      answer: 'For In retorna as chaves enquanto For Of retorna o conteúdo em si'
     },
   ];
 
